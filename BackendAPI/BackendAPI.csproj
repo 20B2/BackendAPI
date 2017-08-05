@@ -229,7 +229,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ATMsController.cs" />
     <Compile Include="Controllers\BranchesController.cs" />
+    <Compile Include="Controllers\CustomerAccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TransactionsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -242,12 +244,18 @@
     <Compile Include="Migrations\201708050149122_atm.Designer.cs">
       <DependentUpon>201708050149122_atm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708050200423_CustomerAccount.cs" />
+    <Compile Include="Migrations\201708050200423_CustomerAccount.Designer.cs">
+      <DependentUpon>201708050200423_CustomerAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\ATM.cs" />
+    <Compile Include="Models\CustomerAccount.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -334,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708050149122_atm.resx">
       <DependentUpon>201708050149122_atm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708050200423_CustomerAccount.resx">
+      <DependentUpon>201708050200423_CustomerAccount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
