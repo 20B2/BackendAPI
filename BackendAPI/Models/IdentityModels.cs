@@ -34,5 +34,9 @@ namespace BackendAPI.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BackendAPI.Models.Branch> Branches { get; set; }
+
+        public System.Data.Entity.DbSet<BackendAPI.Models.ATM> ATMs { get; set; }
     }
 }
